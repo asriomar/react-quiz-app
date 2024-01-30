@@ -106,7 +106,7 @@ const QuizApp = () => {
   const category = getCategory(score);
 
   return (
-    <div className="font-mono container mx-auto my-8 p-5 bg-gray-100 rounded-lg shadow-lg w-1/2 mt-28">
+    <div className="font-mono container mx-auto my-8 p-5 bg-gray-100 rounded-lg shadow-lg md:w-1/2 mt-28">
       <h1 className="text-orange-500 text-2xl font-bold mb-4 px-3">Computer & IT Literacy Quiz 💻</h1>
       {!quizStarted ? (
         <div>
