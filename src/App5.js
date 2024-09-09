@@ -49,7 +49,7 @@ const QuizApp = () => {
 
   const startQuiz = () => {
     setQuizStarted(true);
-    setRemainingTime(questions.length * 10); // Change to 10 seconds per question
+    setRemainingTime(questions.length * 25); // Change to 10 seconds per question
   };
 
   const finishQuiz = () => {
