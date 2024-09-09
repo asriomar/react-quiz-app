@@ -62,7 +62,7 @@ const QuizApp = () => {
     setUserAnswers(Array(questions.length).fill(''));
     setQuizFinished(false);
     setShowCorrectAnswers(false);
-    setRemainingTime(questions.length * 10); // Change to 10 seconds per question
+    setRemainingTime(questions.length * 25); // Change to 10 seconds per question
   };
 
   const formatTime = (timeInSeconds) => {
