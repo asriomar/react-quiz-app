@@ -49,7 +49,7 @@ const QuizApp = () => {
 
   const startQuiz = () => {
     setQuizStarted(true);
-    setRemainingTime(questions.length * 25); // Change to 10 seconds per question
+    setRemainingTime(questions.length * 30); // Set to 30 seconds per question
   };
 
   const finishQuiz = () => {
@@ -62,7 +62,7 @@ const QuizApp = () => {
     setUserAnswers(Array(questions.length).fill(''));
     setQuizFinished(false);
     setShowCorrectAnswers(false);
-    setRemainingTime(questions.length * 25); // Change to 10 seconds per question
+    setRemainingTime(questions.length * 30); // Set to 30 seconds per question
   };
 
   const formatTime = (timeInSeconds) => {
@@ -91,7 +91,7 @@ const QuizApp = () => {
 
   useEffect(() => {
     if (!quizFinished && quizStarted) {
-      setRemainingTime(questions.length * 10); // Change to 10 seconds per question
+      setRemainingTime(questions.length * 30); // Set to 30 seconds per question
       const timer = setInterval(() => {
         setRemainingTime((prevTime) => prevTime - 1);
       }, 1000);
